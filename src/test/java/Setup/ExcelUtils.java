@@ -29,6 +29,9 @@ public class ExcelUtils {
 		
 		data = cell.getStringCellValue();
 		
+		workbook.close();
+		file.close();
+		
 		return data;
 		
 	}

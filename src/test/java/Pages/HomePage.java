@@ -13,9 +13,21 @@ public class HomePage extends BasePage {
 	}
 	
 	@FindBy(xpath="//input[@class='Pke_EE']")
-	WebElement searchBox;
+	public WebElement searchBox;
 	
-	@FindBy(xpath="//ul[@class='_1sFryS _2x2Mmc _3ofZy1']/li[1]")
-	WebElement searchItem;
+	@FindBy(xpath="//ul[@class='_1sFryS _2x2Mmc _3ofZy1']/li[2]")
+	public WebElement searchItem;
+	
+	public void searchInput(String productName) {
+		
+		searchBox.sendKeys(productName);
+		
+	}
+	
+	public void clickSearch() {
+		
+		searchItem.click();
+		
+	}
 	
 }
