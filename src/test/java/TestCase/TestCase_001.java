@@ -16,6 +16,7 @@ public class TestCase_001 {
 	
 	public DriverSetup driverSetup;
 	public ExcelUtils excelUtils;
+	
 	public HomePage homePage;
 	public ProductListPage productListPage;
 	
