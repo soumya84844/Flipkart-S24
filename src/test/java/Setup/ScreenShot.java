@@ -22,13 +22,12 @@ public class ScreenShot {
 		this.driver = driver;
 		
 		ts = (TakesScreenshot) driver;
-		path = System.getProperty("user.dir") + "/ScreenShots/";
 		
 	}
 	
 	public String takeScreenShot(String fileName) throws Exception {
 		
-		path += fileName + ".png";
+		path = System.getProperty("user.dir") + "/ScreenShots/" + fileName + ".png";
 		
 		src = ts.getScreenshotAs(OutputType.FILE);
 		trg = new File(path);
