@@ -43,7 +43,8 @@ public class ExcelUtils {
 		fileInput = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\data.xlsx");
 		
 		workbook = new XSSFWorkbook(fileInput);
-		sheet = workbook.createSheet(sheetName);
+		
+		sheet = workbook.getSheet(sheetName);
 		
 		XSSFRow rowInit =  sheet.createRow(0);
 		rowInit.createCell(0).setCellValue("Product Name");

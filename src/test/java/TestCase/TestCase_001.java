@@ -16,6 +16,7 @@ public class TestCase_001 {
 	
 	public DriverSetup driverSetup;
 	public ExcelUtils excelUtils;
+	public ScreenShot ss;
 	
 	public HomePage homePage;
 	public ProductListPage productListPage;
@@ -34,6 +35,8 @@ public class TestCase_001 {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
+		ss = new ScreenShot(driver);
+		
 	}
 	
 	@Test(priority = 0)
@@ -46,6 +49,8 @@ public class TestCase_001 {
 		homePage.searchInput(productName);
 		
 		Thread.sleep(1000);
+		
+		ss.takeScreenShot("test1_Search_By_Product_Name");
 		
 		homePage.clickSearch();
 		
@@ -61,6 +66,8 @@ public class TestCase_001 {
 		Thread.sleep(1000);
 		
 		productListPage.getLowestPrice(productName);
+		
+		ss.takeScreenShot("test2_Sort_Low_To_High_Price_And_Get_Product_With_Lowest_Price");
 		
 	}
 	
