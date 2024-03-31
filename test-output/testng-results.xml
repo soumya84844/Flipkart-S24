@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-30T15:12:15 IST" name="Suite" finished-at="2024-03-30T15:12:41 IST" duration-ms="25665">
+  <suite started-at="2024-03-31T13:15:39 IST" name="Suite" finished-at="2024-03-31T13:16:11 IST" duration-ms="31305">
     <groups>
     </groups>
-    <test started-at="2024-03-30T15:12:15 IST" name="Test" finished-at="2024-03-30T15:12:41 IST" duration-ms="25665">
+    <test started-at="2024-03-31T13:15:39 IST" name="Test" finished-at="2024-03-31T13:16:11 IST" duration-ms="31305">
       <class name="TestCase.TestCase_001">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCase.TestCase_001@2a4fb17b]" started-at="2024-03-30T15:12:17 IST" name="setup" finished-at="2024-03-30T15:12:29 IST" duration-ms="11213" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCase.TestCase_001@2a4fb17b]" started-at="2024-03-31T13:15:42 IST" name="setup" finished-at="2024-03-31T13:15:55 IST" duration-ms="13107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test1_Search_By_Product_Name()[pri:0, instance:TestCase.TestCase_001@2a4fb17b]" started-at="2024-03-30T15:12:29 IST" name="test1_Search_By_Product_Name" finished-at="2024-03-30T15:12:35 IST" duration-ms="6160" status="PASS">
+        <test-method signature="test1_Search_By_Product_Name()[pri:0, instance:TestCase.TestCase_001@2a4fb17b]" started-at="2024-03-31T13:15:55 IST" name="test1_Search_By_Product_Name" finished-at="2024-03-31T13:16:03 IST" duration-ms="7579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1_Search_By_Product_Name -->
-        <test-method signature="test2_Sort_Low_To_High_Price_And_Get_Product_With_Lowest_Price()[pri:1, instance:TestCase.TestCase_001@2a4fb17b]" started-at="2024-03-30T15:12:35 IST" name="test2_Sort_Low_To_High_Price_And_Get_Product_With_Lowest_Price" finished-at="2024-03-30T15:12:39 IST" duration-ms="4553" status="PASS">
+        <test-method signature="test2_Sort_Low_To_High_Price_And_Get_Product_With_Lowest_Price()[pri:1, instance:TestCase.TestCase_001@2a4fb17b]" started-at="2024-03-31T13:16:03 IST" name="test2_Sort_Low_To_High_Price_And_Get_Product_With_Lowest_Price" finished-at="2024-03-31T13:16:09 IST" duration-ms="6439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2_Sort_Low_To_High_Price_And_Get_Product_With_Lowest_Price -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCase.TestCase_001@2a4fb17b]" started-at="2024-03-30T15:12:39 IST" name="closeBrowser" finished-at="2024-03-30T15:12:41 IST" duration-ms="1468" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCase.TestCase_001@2a4fb17b]" started-at="2024-03-31T13:16:09 IST" name="closeBrowser" finished-at="2024-03-31T13:16:11 IST" duration-ms="1244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
