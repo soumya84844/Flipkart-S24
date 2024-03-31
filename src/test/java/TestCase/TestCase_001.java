@@ -37,7 +37,7 @@ public class TestCase_001 {
 	}
 	
 	@Test(priority = 0)
-	public void test1() throws Exception {
+	public void test1_Search_By_Product_Name() throws Exception {
 		
 		homePage = new HomePage(driver);
 		
@@ -52,7 +52,7 @@ public class TestCase_001 {
 	}
 	
 	@Test(priority = 1)
-	public void test2() throws Exception {
+	public void test2_Sort_Low_To_High_Price_And_Get_Product_With_Lowest_Price() throws Exception {
 		
 		productListPage = new ProductListPage(driver);
 		

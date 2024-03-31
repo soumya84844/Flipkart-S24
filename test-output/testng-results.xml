@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-30T15:06:26 IST" name="Suite" finished-at="2024-03-30T15:06:51 IST" duration-ms="24505">
+  <suite started-at="2024-03-30T15:12:15 IST" name="Suite" finished-at="2024-03-30T15:12:41 IST" duration-ms="25665">
     <groups>
     </groups>
-    <test started-at="2024-03-30T15:06:26 IST" name="Test" finished-at="2024-03-30T15:06:51 IST" duration-ms="24505">
+    <test started-at="2024-03-30T15:12:15 IST" name="Test" finished-at="2024-03-30T15:12:41 IST" duration-ms="25665">
       <class name="TestCase.TestCase_001">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCase.TestCase_001@2a4fb17b]" started-at="2024-03-30T15:06:28 IST" name="setup" finished-at="2024-03-30T15:06:39 IST" duration-ms="10877" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCase.TestCase_001@2a4fb17b]" started-at="2024-03-30T15:12:17 IST" name="setup" finished-at="2024-03-30T15:12:29 IST" duration-ms="11213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test1()[pri:0, instance:TestCase.TestCase_001@2a4fb17b]" started-at="2024-03-30T15:06:39 IST" name="test1" finished-at="2024-03-30T15:06:44 IST" duration-ms="4335" status="PASS">
+        <test-method signature="test1_Search_By_Product_Name()[pri:0, instance:TestCase.TestCase_001@2a4fb17b]" started-at="2024-03-30T15:12:29 IST" name="test1_Search_By_Product_Name" finished-at="2024-03-30T15:12:35 IST" duration-ms="6160" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test2()[pri:1, instance:TestCase.TestCase_001@2a4fb17b]" started-at="2024-03-30T15:06:44 IST" name="test2" finished-at="2024-03-30T15:06:50 IST" duration-ms="6007" status="PASS">
+        </test-method> <!-- test1_Search_By_Product_Name -->
+        <test-method signature="test2_Sort_Low_To_High_Price_And_Get_Product_With_Lowest_Price()[pri:1, instance:TestCase.TestCase_001@2a4fb17b]" started-at="2024-03-30T15:12:35 IST" name="test2_Sort_Low_To_High_Price_And_Get_Product_With_Lowest_Price" finished-at="2024-03-30T15:12:39 IST" duration-ms="4553" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCase.TestCase_001@2a4fb17b]" started-at="2024-03-30T15:06:50 IST" name="closeBrowser" finished-at="2024-03-30T15:06:51 IST" duration-ms="1179" status="PASS">
+        </test-method> <!-- test2_Sort_Low_To_High_Price_And_Get_Product_With_Lowest_Price -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCase.TestCase_001@2a4fb17b]" started-at="2024-03-30T15:12:39 IST" name="closeBrowser" finished-at="2024-03-30T15:12:41 IST" duration-ms="1468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
