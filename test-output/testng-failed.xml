@@ -4,7 +4,8 @@
   <listeners>
     <listener class-name="Setup.ExtentReportsSetup"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="index" value="0"/>
     <classes>
       <class name="TestCase.TestCase_001">
         <methods>
@@ -15,5 +16,18 @@
         </methods>
       </class> <!-- TestCase.TestCase_001 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="index" value="1"/>
+    <classes>
+      <class name="TestCase.TestCase_001">
+        <methods>
+          <include name="test1_Search_By_Product_Name"/>
+          <include name="closeBrowser"/>
+          <include name="test2_Sort_Low_To_High_Price_And_Get_Product_With_Lowest_Price"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCase.TestCase_001 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

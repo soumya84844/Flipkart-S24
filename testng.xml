@@ -7,7 +7,9 @@
 	</listeners>
 
 
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Test1">
+  
+  <parameter name="index" value="0" />
   
   <classes>
   
@@ -16,4 +18,17 @@
   </classes>
   
   </test> <!-- Test -->
+  
+  <test thread-count="5" name="Test2">
+  
+  <parameter name="index" value="1" />
+  
+  <classes>
+  
+  	<class name="TestCase.TestCase_001"></class>
+  
+  </classes>
+  
+  </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

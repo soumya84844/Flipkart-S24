@@ -2,34 +2,34 @@ package TestCase;
 
 import java.time.Duration;
 
-import org.openqa.selenium.WebDriver;
+import org.testng.SkipException;
 import org.testng.annotations.*;
 
 import Pages.*;
 import Setup.*;
 
-public class TestCase_001 {
+public class TestCase_001 extends TestBase {
 	
-	public WebDriver driver;
-	public String browser;
 	public String productName;
 	
-	public DriverSetup driverSetup;
-	public ExcelUtils excelUtils;
 	public ScreenShot ss;
 	
 	public HomePage homePage;
 	public ProductListPage productListPage;
 	
 	@BeforeTest
-	public void setup() throws Exception {
+	@Parameters("index")
+	public void setup(int index) throws Exception {
 		
-		excelUtils = new ExcelUtils();
-		driverSetup = new DriverSetup();
+		super.testSetup();
 		
-		browser = excelUtils.getExcelData("TestInputData", 1, 0);
+		if(browsers[index].equalsIgnoreCase("None")) {
+			
+			throw new SkipException("Skipping Test - Browser not required");
+			
+		}
 		
-		driver = driverSetup.getWebDriver(browser);
+		driver = driverSetup.getWebDriver(browsers[index]);
 		
 		driver.get("https://www.flipkart.com/");
 		driver.manage().window().maximize();
@@ -44,7 +44,7 @@ public class TestCase_001 {
 		
 		homePage = new HomePage(driver);
 		
-		productName = excelUtils.getExcelData("TestInputData", 1, 1);
+		productName = excelUtils.getExcelData("TestInputData", 1, 2);
 		
 		homePage.searchInput(productName);
 		
