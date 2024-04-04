@@ -9,6 +9,7 @@
       <class name="TestCase.TestCase_001">
         <methods>
           <include name="closeBrowser"/>
+          <include name="test1_Search_By_Product_Name"/>
           <include name="test2_Sort_Low_To_High_Price_And_Get_Product_With_Lowest_Price"/>
           <include name="setup"/>
         </methods>

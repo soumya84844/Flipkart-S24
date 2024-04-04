@@ -61,11 +61,7 @@ public class TestCase_001 {
 		
 		productListPage = new ProductListPage(driver);
 		
-		productListPage.sortPrice();
-		
-		Thread.sleep(1000);
-		
-		productListPage.getLowestPrice(productName);
+		productListPage.getProducts(productName);
 		
 		ss.takeScreenShot("test2_Sort_Low_To_High_Price_And_Get_Product_With_Lowest_Price");
 		

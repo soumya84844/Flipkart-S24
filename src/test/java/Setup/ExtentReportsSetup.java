@@ -67,6 +67,8 @@ public class ExtentReportsSetup implements ITestListener {
 		
 		catch(Exception e) {}
 		
+		onTestFailure(result);
+		
 	}
 	
 	public void onTestFailure(ITestResult result) {

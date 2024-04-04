@@ -34,49 +34,28 @@ public class ProductListPage extends BasePage {
 
 	}
 	
-	public void sortPrice() {
-		
-		sortLowToHigh.click();
-		
-	}
-	
-	public void getLowestPrice(String productName) throws Exception {
+	public void getProducts(String productName) throws Exception {
 		
 		productTitles = driver.findElements(By.xpath("//div[@class='_4rR01T']"));
 		productPrices = driver.findElements(By.xpath("//div[@class='_30jeq3 _1_WHN1']"));
 		
-		int pos = -1, n = productTitles.size();
+		int n = productTitles.size();
 		
-		for(int i = 0; i < n; i++) {	
+		for(int i = 0; i < n; i++) {
 			
-			if(productTitles.get(i).getText().toLowerCase().contains(productName.toLowerCase())) {
-				
-				pos = i;
-				
-				break;
-				
-			}
+			String name = productTitles.get(i).getText();
+			String price = productPrices.get(i).getText();
+			
+			if(!name.toLowerCase().contains(productName.toLowerCase())) continue;
+			
+			data[0] = name;
+			data[1] = price;
+			
+			excelUtils.writeExcelData(data, "TestOutputData", i + 1, 0);
+			
+			System.out.println(name + " : " + price);
 			
 		}
-		
-		if(pos == -1) {
-			
-			System.out.println("Required Product " + productName + " Not Found !!!");
-			
-			data[0] = data[1] = "Not Found !!!";
-			
-		}
-		
-		else {
-			
-			System.out.println("Lowest Price of " + productTitles.get(pos).getText() + " = " + productPrices.get(pos).getText());
-			
-			data[0] = productTitles.get(pos).getText();
-			data[1] = productPrices.get(pos).getText();
-			
-		}
-		
-		excelUtils.writeExcelData(data, "TestOutputData", 1, 0);
 		
 	}
 	
