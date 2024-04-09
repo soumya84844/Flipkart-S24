@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="Setup.ExtentReportsSetup"/>
   </listeners>
-  <test thread-count="5" name="Test1(failed)">
-    <parameter name="index" value="0"/>
+  <test thread-count="2" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="TestCase.TestCase_001">
+      <class name="TestCase.TestCase_Chrome">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="test1_Search_By_Product_Name"/>
-          <include name="test2_Sort_Low_To_High_Price_And_Get_Product_With_Lowest_Price"/>
+          <include name="endTest"/>
           <include name="setup"/>
+          <include name="test2"/>
         </methods>
-      </class> <!-- TestCase.TestCase_001 -->
-    </classes>
-  </test> <!-- Test1(failed) -->
-  <test thread-count="5" name="Test2(failed)">
-    <parameter name="index" value="1"/>
-    <classes>
-      <class name="TestCase.TestCase_001">
+      </class> <!-- TestCase.TestCase_Chrome -->
+      <class name="TestCase.TestCase_Edge">
         <methods>
-          <include name="test1_Search_By_Product_Name"/>
-          <include name="closeBrowser"/>
-          <include name="test2_Sort_Low_To_High_Price_And_Get_Product_With_Lowest_Price"/>
+          <include name="endTest"/>
           <include name="setup"/>
+          <include name="test2"/>
         </methods>
-      </class> <!-- TestCase.TestCase_001 -->
+      </class> <!-- TestCase.TestCase_Edge -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

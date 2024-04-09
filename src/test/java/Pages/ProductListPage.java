@@ -51,7 +51,7 @@ public class ProductListPage extends BasePage {
 			data[0] = name;
 			data[1] = price;
 			
-			excelUtils.writeExcelData(data, "TestOutputData", i + 1, 0);
+//			excelUtils.writeExcelData(data, "TestOutputData", i + 1, 0);
 			
 			System.out.println(name + " : " + price);
 			
